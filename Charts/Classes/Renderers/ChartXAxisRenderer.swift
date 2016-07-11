@@ -249,6 +249,16 @@ public class ChartXAxisRenderer: ChartAxisRendererBase
         
         for i in self.minX.stride(to: self.maxX, by: xAxis.axisLabelModulus)
         {
+            
+            // when only have label that show grid .default is false
+            if self.drawGirdOnlyLabel {
+                let label = xAxis.values[i]
+                if (label == nil)
+                {
+                    continue
+                }
+            }
+            
             position.x = CGFloat(i)
             position.y = 0.0
             position = CGPointApplyAffineTransform(position, valueToPixelMatrix)
