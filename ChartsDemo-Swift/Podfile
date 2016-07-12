@@ -1,0 +1,32 @@
+source 'git://git.coding.net/CocoaPods/Specs.git'
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'ChartsDemo-Swift' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SnapKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxGesture'
+  pod 'RxDataSources'
+  pod 'Moya'
+  pod 'Moya-ObjectMapper/RxSwift'
+  pod 'SwiftDate'
+  pod 'XCGLogger'
+  pod 'SwiftyJSON'
+  pod 'HMSegmentedControl'
+
+  # Pods for ChartsDemo-Swift
+
+  target 'ChartsDemo-SwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ChartsDemo-SwiftUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
