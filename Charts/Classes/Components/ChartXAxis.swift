@@ -27,6 +27,9 @@ public class ChartXAxis: ChartAxisBase
         case BottomInside
     }
     
+    //Only when have label on axis ,then draw the gird
+    public var drawGirdOnlyLabel : Bool = false
+    
     public var values = [String?]()
     
     /// width of the x-axis labels in pixels - this is automatically calculated by the computeAxis() methods in the renderers

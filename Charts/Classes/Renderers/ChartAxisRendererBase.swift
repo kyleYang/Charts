@@ -18,10 +18,7 @@ import CoreGraphics
 public class ChartAxisRendererBase: ChartRendererBase
 {
     public var transformer: ChartTransformer!
-    
-    //Only when have label on axis ,then draw the gird
-    public var drawGirdOnlyLabel : Bool = false
-    
+
     public override init()
     {
         super.init()

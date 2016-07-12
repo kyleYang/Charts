@@ -251,7 +251,7 @@ public class ChartXAxisRenderer: ChartAxisRendererBase
         {
             
             // when only have label that show grid .default is false
-            if self.drawGirdOnlyLabel {
+            if xAxis.drawGirdOnlyLabel {
                 let label = xAxis.values[i]
                 if (label == nil)
                 {
